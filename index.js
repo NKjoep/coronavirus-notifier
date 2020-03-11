@@ -60,7 +60,7 @@ async function getCoronaGermany() {
 async function showGermany() {
   const res = await getCoronaGermany();
   const title = `Coronavirus Germany ${nowHHmm()}`
-  const message = `total:${res.total} / deaths:${res.deaths} / recovered:${res.recovered} \n${res.lastUpdate}`;
+  const message = `Total: ${res.total}     Deaths: ${res.deaths}     Recovered: ${res.recovered} \n${res.lastUpdate}`;
   notify({
     title, message
   })
